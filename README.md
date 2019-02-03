@@ -19,6 +19,13 @@ Github: https://github.com/LoneWolf38/microservice-arch-deploy
 - Source Code will have the Dockerfile and .travis.yml file for Travis CI servers
 - Travis CI will have trigger builds and scripts to upload the docker images after successful builds
 
+## Tools Used
+- Terraform
+- Travis CI
+- Nomad
+- Consul
+- Vault
+- Docker Registry
 
 ## Use Case/Edge Conditions:
 
@@ -30,7 +37,7 @@ Use Case: Consul, Nomad and Vault will provide the service discovery of clusters
 
 Edge Condition: No jobs/tasks can be executed from Nomad web UI, only from cli tool. 
 
-Use Case: Travis CI is integrated with Github for easy triggered updates, each successful build will be packaged into docker images 
+Use Case: Travis CI is integrated with Github for easy triggered updates, each successful build will be packaged into docker images.
 
 Edge Condition: Travis CI is providing with its own server for integration and testing. The servers will be located in different network than the cluster and have limited access to them.
 
